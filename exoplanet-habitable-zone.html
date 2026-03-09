@@ -47,7 +47,7 @@ const hover = RAW.map(d => [
 const R_MIN = 0.31, R_MAX = 33.6;
 function dispSize(r) {
   const s = 10 + 120 * Math.pow((r - R_MIN)/(R_MAX - R_MIN), 1.5);
-  return Math.sqrt(s) * 2.2 + 4;
+  return 4 + 60 * Math.pow((r - R_MIN)/(R_MAX - R_MIN), 1.2);
 }
 
 const traceMain = {
