@@ -36,7 +36,7 @@ const hover = RAW.map(d => [
   `Host: ${d.host}`,
   `Eq. Temp: ${d.eq_temp.toLocaleString()} K`,
   `Stellar Temp: ${d.stellar_temp.toLocaleString()} K`,
-  `Mass: ${d.mass_jup} M♃`,
+  `Mass: ${d.mass_jup} Jupiter`,
   `Radius: ${d.radius_earth} R⊕`,
   `Method: ${d.method}`,
   d.year ? `Discovered: ${d.year}` : '',
@@ -62,7 +62,7 @@ const traceMain = {
     colorscale: jetScale,
     cmin: logMin, cmax: logMax,
     colorbar:{
-      title:{text:'Planet Mass (M♃)',side:'right',font:{color:'#fff',size:11}},
+      title:{text:'Planet Mass (Jupiter Masses)',side:'right',font:{color:'#fff',size:11}},
       tickvals:[Math.log10(0.001),Math.log10(0.01),Math.log10(0.1),Math.log10(1),Math.log10(10)],
       ticktext:['0.001','0.01','0.1','1','10'],
       tickfont:{color:'#fff',size:10},
